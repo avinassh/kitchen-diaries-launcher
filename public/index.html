@@ -1,14 +1,48 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>My Simple Static Page</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8" />
+  <!--link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"-->
+  <link rel="stylesheet" type="text/css" href="css/cst.bootstrap.min.css">
+  <!-- Optional theme -->
+  <!--link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css"-->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <!--script src="http://code.jquery.com/jquery-1.10.1.min.js"></script-->
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Miltonian|Bitter' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="css/site.css">
 </head>
 <body>
-<div class="container">
-	<img src="images/my.jpg">
-	<p>This is a plain HTML/CSS/JS static site running on Heroku</p>
-	<p>Built with &lt;3 by avi.</p>
-</div>	
+    <div class="container">
+        <h1>The Cooking Blog</h1>
+        <h2>...done right!</h2>
+        <div id="mc_embed_signup">
+          <form action="http://rhcloud.us7.list-manage.com/subscribe/post?u=977e379c23e0a39de53179e90&amp;id=34210f0a1d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="form-inline subscribe" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="mce-EMAIL">Email address</label>
+              <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Enter your email to get notified on launch">
+            </div>
+            <button value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-outline-inverse btn-lg">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer"><p>Built with &lt;3 by avi.</p></div>
+    </div>
+	<script src="js/jquery.js"></script>
+    <script src="js/jquery.backstretch.js"></script>
+	<script>
+        $.backstretch([
+          "images/1.jpg",
+          "images/2.jpg",
+          "images/3.jpg",
+          "images/4.jpg",
+          "images/5.jpg",
+          "images/6.jpg",
+          "images/7.jpg"
+        ], {
+            fade: 750,
+            duration: 5000
+        });
+    </script>
 </body>
 </html>
